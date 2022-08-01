@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  text-align: center;
+
+
+}
+body {
+  background-color: rgb(2, 3, 70);
+  font-family: 'Rajdhani', sans-serif;
+}
+header {
+  background: rgb(7, 7, 148);
+}
+
+header h1 {
+  color: rgb(95, 240, 228);
+  padding: 15px;
+}
+
+.score-board {
+  border: 2px solid rgb(197, 228, 228);
+  margin: 20px auto;
+  width: 40vw;
+  color: rgb(180, 245, 253);
+  border-radius: 10px 20px 10px;
+  padding: 7px;
+  font-size:50px;
+  position: relative;
+}
+
+.badge {
+  background: rgb(9, 6, 240);
+  color:#5edf74;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+img {
+  height: 90px;
+  width: 100px;
+}
+
+#player-label {
+  position: absolute;
+  top: 20px;
+  left: -35px;
+  padding: 10px;
+}
+
+#cpu-label {
+  position: absolute;
+  top: 20px;
+  right: -25px;
+  padding: 10px;
+}
+
+.result {
+  font-size: 40px;
+  color: aqua;
+}
+
+.result > p{
+  font-weight: 900;
+}
+
+.choices {
+  margin: 50px 0;
+}
+
+.choice {
+  
+  border: 2px solid rgb(197, 228, 228);
+  display: inline-block;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 0 15px;
+  transition: all 0.2s ease;
+}
+
+.choice:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+#action-message {
+  margin-top: 20px;
+  font-size: 25px;
+  color: aqua;
+}
+
+.win-glow {
+  border: 5px solid rgba(34, 220, 233, 0.74);
+  box-shadow: 0 2px 5px rgb(96, 180, 206);
+}
+
+.lose-glow {
+  border: 5px solid rgba(248, 4, 4, 0.74);
+  box-shadow: 0 2px 5px rgb(158, 3, 3);
+}
+
+.draw-glow {
+  border: 5px solid rgba(99, 95, 95, 0.74);
+  box-shadow: 0 2px 5px rgb(46, 44, 44);
+}
